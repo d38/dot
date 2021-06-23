@@ -1,0 +1,15 @@
+defshell -bash
+
+# Turn off the welcome message
+startup_message off
+
+# Disable visual bell
+vbell off
+
+# Set scrollback buffer to 10000
+defscrollback 10000
+
+# Customize the status line
+hardstatus alwayslastline
+hardstatus string '%{= kw}%?%-w%?%{r}[ %{W}%t%?(%u)%?%{r} ]%{w}%?%+w%?%?%= %{g}]%{y}[ Exit: %{Y}Ctrl%{y}+%{Y}a d%{y}  Switch: %{Y}Ctrl%{y}+%{Y}a%{y}+%{Y}a%{y} ]%{g}[%{B} %d/%m %{W}%c %{g}]'
+
